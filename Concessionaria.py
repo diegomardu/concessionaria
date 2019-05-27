@@ -11,11 +11,11 @@ class Concessionaria:
         carro.setAno(input("Ano do carro:"))
         self._carros.append(carro)
 
-    def buscaCarro(self,ano):
+    def buscaCarroAno(self,ano):
         for i in self._carros:
             if ano == i.getAno():
                 print(i.getNome(),i.getAno(),i.getCor())
-    def busCarro(self,potencia):
+    def busCarroPotencia(self,potencia):
         for i in self._carros:
             if potencia == i.getPotencia():
                 print(i.getNome(),i.getAno(),i.getCor())
