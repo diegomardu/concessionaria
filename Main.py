@@ -4,7 +4,7 @@ carro = Motor(0,0,"")
 carro = Concessionaria()
 carro.adicionarCarro()
 carro.adicionarCarro()
-carro.
 
-carro.buscaCarro(1995)
+
+carro.buscaCarro(input("Ano do carro a ser pesquisado:"))
 

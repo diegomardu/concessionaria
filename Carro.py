@@ -5,7 +5,7 @@ class Carro:
         self._nome = nome
         self._ano = ano
         self._cor = cor
-        self._motor = None
+        self._motor = Motor(0,0,"")
 
     def getNome(self):
         return self._nome
