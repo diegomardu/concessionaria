@@ -5,7 +5,7 @@ class Carro:
         self._nome = nome
         self._ano = ano
         self._cor = cor
-        self._motor = Motor(0,0,"")
+        self._motor = None
 
     def getNome(self):
         return self._nome
@@ -23,4 +23,5 @@ class Carro:
         self._cor = cor
 
     def defineMotor(self,pot):
-        self._motor = Motor(pot)
+        self._motor = Motor(pot,cilindrada =0,combustivel = "Gasolina")
+
