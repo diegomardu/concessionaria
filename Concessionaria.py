@@ -5,7 +5,7 @@ class Concessionaria:
         self._carros = []
 
     def adicionarCarro(self):
-        carro = Carro("",0,"")
+        carro = Carro()
         carro.setNome(input("Nome do carro:"))
         carro.setCor(input("Cor do carro:"))
         carro.setAno(input("Ano do carro:"))
@@ -19,5 +19,5 @@ class Concessionaria:
                 print(i.getNome(),i.getAno(),i.getCor())
     def busCarroPotencia(self,potencia):
         for i in self._carros:
-            if potencia in self._carros:
+            if i.getMotor().getPotencia() == potencia:
                 print(i.getNome(),i.getAno(),i.getCor())

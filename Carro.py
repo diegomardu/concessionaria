@@ -1,7 +1,7 @@
 from Motor import Motor
 
 class Carro:
-    def __init__(self, nome, ano, cor):
+    def __init__(self, nome="", ano=0, cor=""):
         self._nome = nome
         self._ano = ano
         self._cor = cor
@@ -25,3 +25,5 @@ class Carro:
     def defineMotor(self,pot):
         self._motor = Motor(pot,cilindrada =0,combustivel = "Gasolina")
 
+    def getMotor(self):
+        return self._motor
